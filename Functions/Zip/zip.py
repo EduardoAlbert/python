@@ -13,4 +13,4 @@ print(list(zip('ABCD', 'xy')))
 d1 = {'a':1, 'b':2}
 d2 = {'c':4, 'd':5}
 
-print(list(zip(d1, d2.values()))
+print(list(zip(d1, d2.values())))
