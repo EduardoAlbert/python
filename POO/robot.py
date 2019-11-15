@@ -20,12 +20,12 @@ class Robot():
     print(f'{self.name} is turning left')
 
 
-r2d2 = Robot()
+R2d2 = Robot()
 
-r2d2.say_hi(owner='Albert')
-r2d2.walk()
-r2d2.turn_right()
-r2d2.walk()
-r2d2.turn_left()
+R2d2.say_hi(owner='Albert')
+R2d2.walk()
+R2d2.turn_right()
+R2d2.walk()
+R2d2.turn_left()
 
-print(f'My weight is {r2d2.weight}')
+print(f'My weight is {R2d2.weight}')
