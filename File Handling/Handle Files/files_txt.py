@@ -4,7 +4,7 @@ text += "E claro, em Big Data."
 
 import os
 
-file = open(os.path.join('files/cientista.txt'), 'w', encoding='utf-8')
+file = open(os.path.join('cientista.txt'), 'w', encoding='utf-8')
 
 for word in text.split():
   file.write(f'{word} ')
