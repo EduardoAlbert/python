@@ -69,7 +69,6 @@ class Hangman():
   # Método Construtor
   def __init__(self, word):
     self.word = word
-    self.hanging = 0
     self.hits = []
     self.wrong = []
 
@@ -78,13 +77,11 @@ class Hangman():
     if (letter in self.word and letter not in self.hits):
       [self.hits.append(l) for l in self.word if l == letter]
     elif (letter not in self.word and letter not in self.wrong):
-      self.hanging += 1
       self.wrong.append(letter)
 
   # Método para verificar se o jogo terminou
   def hangman_over(self):
-    if (self.hanging == 6 or len(self.hits) == len(self.word)):
-      return True
+    return (len(self.wrong) == 6) or self.hangman_won()
 
   # Método para verificar se o jogador venceu
   def hangman_won(self):
@@ -98,7 +95,7 @@ class Hangman():
 
   # Método para checar o status do game e imprimir o board na tela
   def print_game_status(self):
-    print(board[self.hanging])
+    print(board[len(self.wrong)])
 
     print('\nPalavra: ', end='')
     self.hide_word()
