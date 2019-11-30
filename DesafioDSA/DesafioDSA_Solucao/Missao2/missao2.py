@@ -12,7 +12,8 @@ class TestMath(object):
                                                            False, True, False, 
                                                            False, False, True, 
                                                            False, True, False, 
-                                                           False, False, True, False, True])
+                                                           False, False, True, 
+                                                           False, True])
         print('Sua solução foi executada com sucesso! Parabéns!')
 
 
